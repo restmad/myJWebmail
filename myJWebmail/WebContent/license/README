@@ -1,0 +1,10 @@
+Earlier versions of jwma (from 0.9x to 1.x) were covered by a BSD style license, which 
+still applies to those files that the program has retained - for instance the files in 
+the images directory. A copy of this file is included in the WEB-INF/classes/license 
+directory in the file LICENSE.
+
+Starting with version 2.0, the java source code files were completely rewritten and these 
+are now covered by the GPL3 license a copy of which is included in the same directory in 
+the file GPL.
+
+The licenses of all bundled software including stripes, javamail and jquery are acknowledged.

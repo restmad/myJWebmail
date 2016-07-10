@@ -1,0 +1,172 @@
+/*mobile*/
+input.error{
+    border: 2px solid #880000 ;
+    background-color: #FFDDDD;
+}
+label.error{
+    color: red ;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.wide{
+    width: 100%;
+}
+.fill{
+    text-align: justify;
+}
+.black{
+    background-color: black;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.dark{
+    background-color: #dddddd;
+}
+.light{
+    background-color: #eeeeee; 
+}
+
+img{   
+    vertical-align: middle;
+    height: 50px;
+}
+
+a.green{
+    color: green ;
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+}
+a.small{
+    color: green ;
+    font-size: 100%;
+    font-style: italic;
+    font-weight: bold;
+    vertical-align: bottom;
+    float: right;
+}
+
+table{
+    width: 100%;
+}
+table.nav{
+    background-color: black;
+    padding-left: 5px;
+    border: 0;  
+}
+td.nav{
+    width: 20%;
+}
+
+font{
+    font-family: sans-serif;
+}
+font.large{
+    font-size: 200%;
+}
+textarea{
+    width: 90%;
+}
+input[type='text'], input[type='password']{
+    size: 12;
+}
+input[type='submit'], input[type='button']{
+  display: none;
+  background-color: black;
+}
+
+/* http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/ */
+/* large checkbox*/
+label {
+display: inline;
+}
+.regular-checkbox {
+display: none;
+}
+.regular-checkbox + label {
+background-color: #fafafa;
+border: 1px solid #cacece;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+padding: 9px;
+border-radius: 3px;
+display: inline-block;
+position: relative;
+}
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.regular-checkbox:checked + label {
+background-color: #e9ecee;
+border: 1px solid #adb8c0;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+color: #99a1a7;
+}
+.regular-checkbox:checked + label:after {
+content: '\2714';
+font-size: 14px;
+position: absolute;
+top: 0px;
+left: 3px;
+color: #99a1a7;
+}
+.big-checkbox + label {
+padding: 18px;
+}
+.big-checkbox:checked + label:after {
+font-size: 28px;
+left: 6px;
+}
+
+/* large radio buttons*/
+.tag {
+font-family: sans-serif;
+display: block;
+}
+.regular-radio{
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-radio:checked:after {
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	border-radius: 50px;
+	position: absolute;
+	top: 3px;
+	background: #99a1a7;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	text-shadow: 0px;
+	left: 3px;
+	font-size: 32px;
+}
+
+.regular-radio:checked {
+	background-color: #e9ecee;
+	color: #99a1a7;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.regular-radio:active, .regular-radio:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.big-radio {
+	padding: 16px;
+}
+
+.big-radio:checked:after {
+	width: 24px;
+	height: 24px;
+	left: 4px;
+	top: 4px;
+}
+

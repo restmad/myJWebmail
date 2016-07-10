@@ -1,0 +1,81 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: jwma_user; Type: TABLE; Schema: public; Owner: jwma; Tablespace: 
+--
+
+CREATE TABLE jwma_user (
+    username character varying(20) NOT NULL,
+    auto_empty boolean NOT NULL,
+    auto_quote boolean NOT NULL,
+    auto_sign boolean NOT NULL,
+    contact_list bytea,
+    draft_folder character varying(30) NOT NULL,
+    language character varying(2) NOT NULL,
+    mail_id character varying(150) NOT NULL,
+    processor integer,
+    sent_folder character varying(30) NOT NULL,
+    sort_order integer NOT NULL
+);
+
+
+ALTER TABLE public.jwma_user OWNER TO jwma;
+
+--
+-- Data for Name: jwma_user; Type: TABLE DATA; Schema: public; Owner: jwma
+--
+
+COPY jwma_user (username, auto_empty, auto_quote, auto_sign, contact_list, draft_folder, language, mail_id, processor, sent_folder, sort_order) FROM stdin;
+\.
+
+
+--
+-- Name: jwma_user_pkey; Type: CONSTRAINT; Schema: public; Owner: jwma; Tablespace: 
+--
+
+ALTER TABLE ONLY jwma_user
+    ADD CONSTRAINT jwma_user_pkey PRIMARY KEY (username);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+--
+-- PostgreSQL database dump complete
+--
+

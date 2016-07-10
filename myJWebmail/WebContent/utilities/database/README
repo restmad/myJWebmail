@@ -1,0 +1,33 @@
+Insert the empty database schemas for postgres and mysql as follows:-
+
+Postgres
+--------
+as postgres user (the password must be webmail):-
+
+1) create the jwma user
+createuser -P jwma
+Enter password for new role: 
+Enter it again: 
+Shall the new role be a superuser? (y/n) n
+Shall the new role be allowed to create databases? (y/n) y
+Shall the new role be allowed to create more new roles? (y/n) n
+
+2) create the database
+createdb -O jwma "jwma"
+
+3) insert the schema
+psql -d jwma -f jwma.postgres
+
+Mysql
+-----
+1)enter mysql shell as root user
+mysql -u  root -p;
+
+2)create the database and user
+mysql> create database jwma;
+mysql> grant all on jwma .* to 'jwma'@'localhost' identified by 'webmail';
+mysql> flush privileges;
+mysql> quit;
+
+3) insert the schema
+mysql -u root -p jwma < jwma.mysql

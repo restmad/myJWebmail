@@ -1,0 +1,14 @@
+input.error{
+    border: 2px solid #880000 ;
+    background-color: #FFDDDD;
+}
+label.error{
+    color: red ;
+    font-weight: bold;
+    text-decoration: underline;
+}
+a.rich{
+    color: white ;
+    font-size: smaller;
+}
+/*mobile inteface*/
